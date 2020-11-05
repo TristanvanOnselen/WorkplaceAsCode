@@ -11,7 +11,6 @@
 #>
 
 $source = "https://sacomputeranalyzer.blob.core.windows.net/custombackgrounds/photo-1518481852452-9415b262eba4.zip"
-
 Start-BitsTransfer -Source $source -Destination $env:temp
 $filename =  Split-Path -Path $source -Leaf
 if(test-path -Path $env:temp\CustomBackgrounds)
